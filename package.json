@@ -1,0 +1,65 @@
+{
+  "name": "three-cover",
+  "version": "1.1.2",
+  "private": true,
+  "main": "src/index.js",
+  "description": "React component to add 3-D covers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshaaatt/three-cover.git"
+  },
+  "keywords": [
+    "react",
+    "three.js",
+    "three",
+    "3D",
+    "component",
+    "cover"
+  ],
+  "author": "Akshat Tiwari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akshaaatt/three-cover/issues"
+  },
+  "homepage": "https://github.com/akshaaatt/three-cover#readme",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.0",
+    "@pmndrs/branding": "0.0.8",
+    "@react-three/drei": "9.32.3",
+    "@react-three/fiber": "8.0.10",
+    "@types/three": "0.139.0",
+    "three": "0.139.2",
+    "uuid-by-string": "3.0.6",
+    "wouter": "2.8.0-alpha.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
