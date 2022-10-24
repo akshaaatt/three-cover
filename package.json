@@ -1,11 +1,19 @@
 {
   "name": "three-cover",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "private": false,
-  "main": "components/index.jsx",
+  "main": "dist/index.js",
   "description": "React component to add 3-D covers",
   "publishConfig": {
     "access": "public"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist &&  babel components -d dist --copy-files"
   },
   "repository": {
     "type": "git",
@@ -26,15 +34,18 @@
   },
   "homepage": "https://github.com/akshaaatt/three-cover#readme",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "@pmndrs/branding": "0.0.8",
     "@react-three/drei": "9.32.3",
     "@react-three/fiber": "8.0.10",
     "@types/three": "0.139.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
     "three": "0.139.2",
     "uuid-by-string": "3.0.6",
     "wouter": "2.8.0-alpha.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/preset-react": "^7.18.6"
   }
 }
