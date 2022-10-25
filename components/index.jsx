@@ -38,7 +38,7 @@ const ThreeCover = ({ images }) => {
   );
 };
 
-const Frames = ({ images, q = new Quaternion(null,null,null,null), p = new Vector3(null,null,null) }) => {
+const Frames = ({ images, q = new Quaternion(), p = new Vector3() }) => {
   const ref = useRef();
   const clicked = useRef();
   const [, params] = useRoute('/item/:id');
@@ -77,7 +77,7 @@ const Frames = ({ images, q = new Quaternion(null,null,null,null), p = new Vecto
   );
 };
 
-const Frame = ({ url, c = new Color(null), ...props }) => {
+const Frame = ({ url, c = new Color(), ...props }) => {
   const [hovered, hover] = useState(false);
   const [rnd] = useState(() => Math.random());
   const image = useRef();

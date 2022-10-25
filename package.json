@@ -1,6 +1,6 @@
 {
   "name": "three-cover",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -47,17 +47,17 @@
   "dependencies": {
     "@react-three/drei": "9.32.3",
     "@react-three/fiber": "8.0.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "three": "0.139.2",
-    "uuid-by-string": "3.0.6",
-    "wouter": "2.8.0-alpha.2",
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.5",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
-    "@types/three": "^0.144.0"
+    "@types/three": "^0.144.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "three": "^0.145.0",
+    "uuid-by-string": "3.0.6",
+    "wouter": "2.8.0-alpha.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
