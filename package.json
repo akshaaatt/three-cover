@@ -13,7 +13,9 @@
     ]
   },
   "scripts": {
-    "build": "rm -rf dist && mkdir dist &&  babel components -d dist --copy-files"
+    "build": "rm -rf dist && mkdir dist &&  babel components -d dist --copy-files",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d example/build"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/akshaaatt/three-cover/issues"
   },
-  "homepage": "https://github.com/akshaaatt/three-cover#readme",
+  "homepage": "https://akshaaatt.github.io/three-cover/",
   "dependencies": {
     "@react-three/drei": "9.32.3",
     "@react-three/fiber": "8.0.10",
@@ -46,6 +48,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
-    "@babel/preset-react": "^7.18.6"
+    "@babel/preset-react": "^7.18.6",
+    "gh-pages": "^4.0.0"
   }
 }
