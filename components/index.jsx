@@ -8,7 +8,7 @@ import getUuid from 'uuid-by-string';
 
 const GOLDENRATIO = 1.61803398875;
 
-const ThreeCover = (images) => {
+const ThreeCover = ({ images }) => {
   return (
     <Canvas gl={{ alpha: false }} dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
       <color attach="background" args={['#191920']} />
@@ -36,7 +36,7 @@ const ThreeCover = (images) => {
   );
 };
 
-const Frames = (images, q = new THREE.Quaternion(), p = new THREE.Vector3()) => {
+const Frames = ({ images, q = new THREE.Quaternion(), p = new THREE.Vector3() }) => {
   const ref = useRef();
   const clicked = useRef();
   const [, params] = useRoute('/item/:id');
@@ -71,7 +71,7 @@ const Frames = (images, q = new THREE.Quaternion(), p = new THREE.Vector3()) => 
   );
 };
 
-const Frame = (url, c = new THREE.Color(), ...props) => {
+const Frame = ({ url, c = new THREE.Color(), ...props }) => {
   const [hovered, hover] = useState(false);
   const [rnd] = useState(() => Math.random());
   const image = useRef();

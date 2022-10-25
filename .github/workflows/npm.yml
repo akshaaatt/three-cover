@@ -21,3 +21,5 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: yarn predeploy
       - run: yarn deploy
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
