@@ -16,6 +16,7 @@ jobs:
           scope: '@akshaaatt'
       - run: yarn install
       - run: yarn build
+      - run: yarn deploy
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
