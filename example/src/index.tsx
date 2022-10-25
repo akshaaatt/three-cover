@@ -1,5 +1,5 @@
-import { Suspense } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './styles.css'
 import ThreeCover from 'three-cover'
 
@@ -19,8 +19,14 @@ const images = [
     { position: [2, 0, 2.75], rotation: [0, -Math.PI / 2.5, 0], url: 'https://is4-ssl.mzstatic.com/image/thumb/Music122/v4/55/dd/ab/55ddab67-26ec-e244-2c37-37f92b63bf19/196589366870.jpg/600x600bb.png' }
 ]
 
-createRoot(document.getElementById('root')).render(
-    <Suspense fallback={null}>
-        <ThreeCover images={images} />
-    </Suspense>
-)
+const root = ReactDOM.createRoot(
+    document.getElementById('root') as HTMLElement
+);
+root.render(
+    <React.StrictMode>
+        {
+            // @ts-ignore
+            <ThreeCover images={images}/>
+        }
+    </React.StrictMode>
+);

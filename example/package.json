@@ -4,14 +4,10 @@
   "private": true,
   "homepage": "https://akshaaatt.github.io/three-cover/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "three-cover": "1.1.8",
-    "web-vitals": "^2.1.0"
+    "three-cover": "1.1.9"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +32,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.5",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "typescript": "^4.8.4"
   }
 }
