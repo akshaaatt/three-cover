@@ -2249,10 +2249,22 @@
   dependencies:
     "@types/jest" "*"
 
+"@types/three@^0.144.0":
+  version "0.144.0"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.144.0.tgz#a154f40122dbc3668c5424a5373f3965c6564557"
+  integrity sha512-psvEs6q5rLN50jUYZ3D4pZMfxTbdt3A243blt0my7/NcL6chaCZpHe2csbCtx0SOD9fI/XnF3wnVUAYZGqCSYg==
+  dependencies:
+    "@types/webxr" "*"
+
 "@types/trusted-types@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.2.tgz#fc25ad9943bcac11cceb8168db4f275e0e72e756"
   integrity sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==
+
+"@types/webxr@*":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.0.tgz#aae1cef3210d88fd4204f8c33385a0bbc4da07c9"
+  integrity sha512-IUMDPSXnYIbEO2IereEFcgcqfDREOgmbGqtrMpVPpACTU6pltYLwHgVkrnYv0XhWEcjio9sYEfIEzgn3c7nDqA==
 
 "@types/ws@^8.5.1":
   version "8.5.3"
@@ -8606,13 +8618,18 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-three-cover@1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.2.6.tgz#60fa14d42540ea24b4fe8bafb5cb7a7bcc7a9cae"
-  integrity sha512-Upnu18wlgX/F24sxPTafZL5cxvHG3WVTsfQzTKQ53Pk77QIDL1IcDVeSkq10g8gwjQuwZ6tU+VvHXRhr+d+YOA==
+three-cover@1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.2.7.tgz#15a4b0ad31d38cf1fb5dcac4067ec2b0deee7866"
+  integrity sha512-XUr6pf2HzjOHmereY57uU8oSjesjjLBs1W8JNqcND2QR97gqaLOhCK0auJ6orRpubTQlCihNorKBn1yuQXwYfA==
   dependencies:
     "@react-three/drei" "9.32.3"
     "@react-three/fiber" "8.0.10"
+    "@types/jest" "^29.2.0"
+    "@types/node" "^18.11.5"
+    "@types/react" "^18.0.22"
+    "@types/react-dom" "^18.0.7"
+    "@types/three" "^0.144.0"
     react "^18.2.0"
     react-dom "^18.2.0"
     react-scripts "5.0.1"
