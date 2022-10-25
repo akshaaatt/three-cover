@@ -1,6 +1,6 @@
 {
   "name": "three-cover",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "private": false,
   "main": "dist/index.tsx",
   "description": "React component to add 3-D covers",
@@ -9,11 +9,18 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-react"
+      "@babel/preset-env",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
     ]
   },
   "scripts": {
-    "build": "rm -rf dist && mkdir dist &&  babel components -d dist --copy-files",
+    "build": "yarn build:types && yarn build:js",
+    "build:types": "tsc",
+    "build:js": "rm -rf dist && mkdir dist && babel components --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "predeploy": "cd example && yarn install && yarn build",
     "deploy": "gh-pages -d example/build"
   },
@@ -47,7 +54,10 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
-    "@babel/preset-react": "^7.18.6",
+    "@babel/core": "^7.19.6",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.5",
     "@types/react": "^18.0.22",
