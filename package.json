@@ -1,6 +1,6 @@
 {
   "name": "three-cover",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,6 +11,7 @@
   "babel": {
     "presets": [
       "@babel/preset-env",
+      "@babel/preset-react",
       "@babel/preset-typescript"
     ],
     "plugins": [
