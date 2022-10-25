@@ -8606,10 +8606,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-three-cover@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.2.2.tgz#5fb28858806853ffee4a688ad74386fff5cd78ed"
-  integrity sha512-QeUDHcYSCkbjlqq7ukZrqphh7mgFuakWbtEdZx1zGtZgoKyO09uO+DzcEITLdu4Y+LvAudwWdvLR+1RIMlKO6g==
+three-cover@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.2.3.tgz#36a69d75443fca7d3c5847c210b421f86fa94f71"
+  integrity sha512-5SBcVyXw4ygsl0cHTv5D4KcqvaizZ3GWETRxPG6isICED0ER+slBPXgVzfkBOhrxuiIWQ1xvtTAwrOL48tF8yg==
   dependencies:
     "@react-three/drei" "9.32.3"
     "@react-three/fiber" "8.0.10"
