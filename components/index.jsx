@@ -3,10 +3,12 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useCursor, MeshReflectorMaterial, Image, Environment } from '@react-three/drei';
 import { useRoute, useLocation } from 'wouter';
 import getUuid from 'uuid-by-string';
-import {Color, Quaternion, Vector3} from "three";
+import * as THREE from 'three';
+import { Color, Quaternion, Vector3 } from 'three';
 
 const GOLDENRATIO = 1.61803398875;
 
+// eslint-disable-next-line react/prop-types
 const ThreeCover = ({ images }) => {
   return (
     <Canvas gl={{ alpha: false }} dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
@@ -38,6 +40,7 @@ const ThreeCover = ({ images }) => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const Frames = ({ images, q = new Quaternion(), p = new Vector3() }) => {
   const ref = useRef();
   const clicked = useRef();
@@ -70,13 +73,15 @@ const Frames = ({ images, q = new Quaternion(), p = new Vector3() }) => {
         setLocation(clicked.current === e.object ? '/' : '/item/' + e.object.name)
       )}
       onPointerMissed={() => setLocation('/')}>
-      {images.map((props: any) => (
+      {images.map((props) => (
+        // eslint-disable-next-line react/prop-types
         <Frame key={props.url} {...props} />
       ))}
     </group>
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const Frame = ({ url, c = new Color(), ...props }) => {
   const [hovered, hover] = useState(false);
   const [rnd] = useState(() => Math.random());
@@ -89,14 +94,14 @@ const Frame = ({ url, c = new Color(), ...props }) => {
     image.current.material.zoom = 2 + Math.sin(rnd * 10000 + state.clock.elapsedTime / 3) / 2;
     // @ts-ignore
     image.current.scale.x = THREE.MathUtils.lerp(
-        // @ts-ignore
+      // @ts-ignore
       image.current.scale.x,
       0.85 * (hovered ? 0.85 : 1),
       0.1
     );
     // @ts-ignore
     image.current.scale.y = THREE.MathUtils.lerp(
-        // @ts-ignore
+      // @ts-ignore
       image.current.scale.y,
       0.9 * (hovered ? 0.905 : 1),
       0.1
@@ -120,7 +125,7 @@ const Frame = ({ url, c = new Color(), ...props }) => {
         </mesh>
         {
           // @ts-ignore
-          <Image raycast={() => null} ref={image} position={[0, 0, 0.7]} url={url}/>
+          <Image raycast={() => null} ref={image} position={[0, 0, 0.7]} url={url} />
         }
       </mesh>
     </group>
