@@ -8618,10 +8618,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-three-cover@1.2.8:
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.2.8.tgz#0c29e763cf535df00e3aaa817d86fe96d7442e20"
-  integrity sha512-q1m+6Yab2WgWVQg+BAASnWtS5LAHV3Z40Sz+IZubSkZKrqgLzQIe44WCQ6Sa6O5UyruDS4wZxaRGd1Vklf7png==
+three-cover@1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.2.9.tgz#aa6d44da7740f14cd514cf19bb2596a518d8217e"
+  integrity sha512-54Z1XTybxkFsNc62zXWO2GrzjeHwAymC4mXJHVHxp57wrrXADTVpz9ROV2nfKXDomg5HP1M0kD+ZsgVgv6J2XA==
   dependencies:
     "@react-three/drei" "9.32.3"
     "@react-three/fiber" "8.0.10"
@@ -8633,7 +8633,7 @@ three-cover@1.2.8:
     react "^18.2.0"
     react-dom "^18.2.0"
     react-scripts "5.0.1"
-    three "0.139.2"
+    three "^0.145.0"
     uuid-by-string "3.0.6"
     wouter "2.8.0-alpha.2"
 
@@ -8659,10 +8659,10 @@ three-stdlib@2.17.0:
     potpack "^1.0.1"
     zstddec "^0.0.2"
 
-three@0.139.2:
-  version "0.139.2"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.139.2.tgz#b110799a15736df673b9293e31653a4ac73648dd"
-  integrity sha512-gV7q7QY8rogu7HLFZR9cWnOQAUedUhu2WXAnpr2kdXZP9YDKsG/0ychwQvWkZN5PlNw9mv5MoCTin6zNTXoONg==
+three@^0.145.0:
+  version "0.145.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.145.0.tgz#a613d71e75effc2aed88be630027ca01e2b6502e"
+  integrity sha512-EKoHQEtEJ4CB6b2BGMBgLZrfwLjXcSUfoI/MiIXUuRpeYsfK5aPWbYhdtIVWOH+x6X0TouldHKHBuc/LAiFzAw==
 
 throat@^6.0.1:
   version "6.0.1"
