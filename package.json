@@ -1,6 +1,6 @@
 {
   "name": "three-cover",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "private": false,
   "description": "React component to add 3-D covers",
   "publishConfig": {
@@ -47,6 +47,7 @@
     "react-scripts": "5.0.1",
     "three": "^0.145.0",
     "uuid-by-string": "3.0.6",
+    "valtio": "^1.7.4",
     "wouter": "2.8.0-alpha.2"
   },
   "devDependencies": {
