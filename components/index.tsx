@@ -1,4 +1,2 @@
-import ThreeLibrary from './ThreeLibrary';
-import ThreeSlider from './ThreeSlider';
-
-export default [ThreeLibrary, ThreeSlider];
+export { default as ThreeLibrary } from './ThreeLibrary';
+export { default as ThreeSlider } from './ThreeSlider';

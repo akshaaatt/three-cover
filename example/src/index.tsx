@@ -22,9 +22,11 @@ const images = [
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
+
 root.render(
     <React.StrictMode>
         {
+            // @ts-ignore
             <ThreeLibrary images={images}/>
         }
     </React.StrictMode>
