@@ -1,6 +1,6 @@
 {
   "name": "three-cover",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "private": false,
   "description": "React component to add 3-D covers",
   "publishConfig": {
