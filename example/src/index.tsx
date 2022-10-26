@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css'
-import ThreeCover from 'three-cover'
+import ThreeLibrary from 'three-cover'
 
 const images = [
     // Front
@@ -26,7 +26,7 @@ root.render(
     <React.StrictMode>
         {
             // @ts-ignore
-            <ThreeCover images={images}/>
+            <ThreeLibrary images={images}/>
         }
     </React.StrictMode>
 );

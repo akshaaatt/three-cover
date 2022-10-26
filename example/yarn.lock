@@ -7462,6 +7462,11 @@ proxy-addr@~2.0.7:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
 
+proxy-compare@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/proxy-compare/-/proxy-compare-2.3.0.tgz#ac9633ae52918ff9c9fcc54dfe6316c7a02d20ee"
+  integrity sha512-c3L2CcAi7f7pvlD0D7xsF+2CQIW8C3HaYx2Pfgq8eA4HAl3GAH6/dVYsyBbYF/0XJs2ziGLrzmz5fmzPm6A0pQ==
+
 psl@^1.1.33:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.9.0.tgz#d0df2a137f00794565fcaf3b2c00cd09f8d5a5a7"
@@ -8618,10 +8623,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-three-cover@1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.2.9.tgz#aa6d44da7740f14cd514cf19bb2596a518d8217e"
-  integrity sha512-54Z1XTybxkFsNc62zXWO2GrzjeHwAymC4mXJHVHxp57wrrXADTVpz9ROV2nfKXDomg5HP1M0kD+ZsgVgv6J2XA==
+three-cover@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.3.2.tgz#1ca439eb739b907e4007a5f9e14656be1b9874b8"
+  integrity sha512-WXDPnlU5iYOCeHtbi9ICBd2pzUQ/vm+iEDAtp3LLe0fY77zqQd/Y+90mCZA3H9xeSoyWZu+mvOE0NTGxDZFuOA==
   dependencies:
     "@react-three/drei" "9.32.3"
     "@react-three/fiber" "8.0.10"
@@ -8635,6 +8640,7 @@ three-cover@1.2.9:
     react-scripts "5.0.1"
     three "^0.145.0"
     uuid-by-string "3.0.6"
+    valtio "^1.7.4"
     wouter "2.8.0-alpha.2"
 
 three-mesh-bvh@^0.5.15:
@@ -8919,6 +8925,11 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
+use-sync-external-store@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -8970,6 +8981,14 @@ v8-to-istanbul@^8.1.0:
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^1.6.0"
     source-map "^0.7.3"
+
+valtio@^1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/valtio/-/valtio-1.7.4.tgz#07d9b1d4b4f49120474c4b861f0a1425ae3a2bb5"
+  integrity sha512-x8N7I7hfIlRHQyRe8cx3QJsEYdzMHb12HYUGIDjPruEwLrMpegvS8iZDk4PZ/i8HgeiOPF7Qr78Ke3HA1CGu9A==
+  dependencies:
+    proxy-compare "2.3.0"
+    use-sync-external-store "1.2.0"
 
 vary@~1.1.2:
   version "1.1.2"
