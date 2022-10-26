@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/three-cover/static/css/main.f1021bed.css",
-    "main.js": "/three-cover/static/js/main.b1caf2be.js",
-    "static/media/three.cjs": "/three-cover/static/media/three.f8accc5c0ec37763a1e1.cjs",
+    "main.js": "/three-cover/static/js/main.dd615bb6.js",
     "index.html": "/three-cover/index.html",
     "main.f1021bed.css.map": "/three-cover/static/css/main.f1021bed.css.map",
-    "main.b1caf2be.js.map": "/three-cover/static/js/main.b1caf2be.js.map"
+    "main.dd615bb6.js.map": "/three-cover/static/js/main.dd615bb6.js.map"
   },
   "entrypoints": [
     "static/css/main.f1021bed.css",
-    "static/js/main.b1caf2be.js"
+    "static/js/main.dd615bb6.js"
   ]
 }
