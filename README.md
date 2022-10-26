@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/dm/three-cover.svg)](https://www.npmjs.com/package/three-cover)
 ![GitHub](https://img.shields.io/github/license/akshaaatt/three-cover)
 [![Publish Package to npmjs](https://github.com/akshaaatt/three-cover/actions/workflows/npm.yml/badge.svg?branch=main)](https://github.com/akshaaatt/three-cover/actions/workflows/npm.yml)
+[![Update gh-pages](https://github.com/akshaaatt/three-cover/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/akshaaatt/three-cover/actions/workflows/gh-pages.yml)
 
 This project is generated from [react-typescript-library template](https://github.com/akshaaatt/react-typescript-library).
 
