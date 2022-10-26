@@ -76,6 +76,16 @@
  */
 
 /**
+ * @license React
+ * use-sync-external-store-shim.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
  * [js-md5]{@link https://github.com/emn178/js-md5}
  *
  * @namespace md5
