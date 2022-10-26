@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css'
-import ThreeLibrary from "three-cover";
+import {ThreeLibrary} from "three-cover";
 
 const images = [
     // Front
