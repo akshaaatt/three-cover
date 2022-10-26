@@ -1,13 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
+import * as THREE from 'three';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useCursor, MeshReflectorMaterial, Image, Environment } from '@react-three/drei';
 import { useRoute, useLocation } from 'wouter';
 import getUuid from 'uuid-by-string';
-import {Color, Quaternion, Vector3} from "three";
 
 const GOLDENRATIO = 1.61803398875;
 
-// @ts-ignore
 const ThreeCover = ({ images }) => {
   return (
     <Canvas gl={{ alpha: false }} dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
@@ -39,8 +38,7 @@ const ThreeCover = ({ images }) => {
   );
 };
 
-// @ts-ignore
-const Frames = ({ images, q = new Quaternion(), p = new Vector3() }) => {
+const Frames = ({ images, q = new THREE.Quaternion(), p = new THREE.Vector3() }) => {
   const ref = useRef();
   const clicked = useRef();
   const [, params] = useRoute('/item/:id');
@@ -79,8 +77,7 @@ const Frames = ({ images, q = new Quaternion(), p = new Vector3() }) => {
   );
 };
 
-// @ts-ignore
-const Frame = ({ url, c = new Color(), ...props }) => {
+const Frame = ({ url, c = new THREE.Color(), ...props }) => {
   const [hovered, hover] = useState(false);
   const [rnd] = useState(() => Math.random());
   const image = useRef();
