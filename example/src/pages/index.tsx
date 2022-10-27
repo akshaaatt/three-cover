@@ -8,6 +8,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import homepageJpg from '../res/img/homepage.jpg';
+import { Link as RouterLink } from 'react-router-dom'
 
 function Copyright(props: any) {
     return (
@@ -60,7 +61,9 @@ const Home = () => {
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            onClick={() => window.location.href = '/library'}
+                            onClick={() => {
+                                <RouterLink to="/library" />
+                            }}
                         >
                             Library
                         </Button>
@@ -68,7 +71,9 @@ const Home = () => {
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            onClick={() => window.location.href = '/slider'}
+                            onClick={() =>{
+                                <RouterLink to="/slider" />
+                            }}
                         >
                             Slider
                         </Button>
