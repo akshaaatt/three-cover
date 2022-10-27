@@ -29,4 +29,4 @@ yarn add three-cover
 
 ## License
 
-MIT © [Akshat Tiwari](https://github.com/akshaaaatt)
+MIT © [Akshat Tiwari](https://github.com/akshaaatt)
