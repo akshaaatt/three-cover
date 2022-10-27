@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import homepageJpg from '../res/img/homepage.jpg';
-import {Link as RouterLink, useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 function Copyright(props: any) {
     return (
