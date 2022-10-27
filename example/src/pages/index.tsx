@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import homepageJpg from '../res/img/homepage.jpg';
-import { Link as RouterLink } from 'react-router-dom'
+import {Link as RouterLink, useNavigate} from 'react-router-dom'
 
 function Copyright(props: any) {
     return (
@@ -26,6 +26,8 @@ function Copyright(props: any) {
 const theme = createTheme();
 
 const Home = () => {
+    let navigate = useNavigate();
+
     return (
         <ThemeProvider theme={theme}>
             <Grid container component="main" sx={{ height: '100vh' }}>
@@ -62,7 +64,7 @@ const Home = () => {
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
                             onClick={() => {
-                                <RouterLink to="/library" />
+                               navigate('/library');
                             }}
                         >
                             Library
@@ -72,7 +74,7 @@ const Home = () => {
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
                             onClick={() =>{
-                                <RouterLink to="/slider" />
+                                navigate('/slider');
                             }}
                         >
                             Slider
