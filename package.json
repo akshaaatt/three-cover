@@ -46,7 +46,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "three": "^0.145.0",
-    "uuid-by-string": "3.0.6",
+    "uuid-by-string": "4.0.0",
     "valtio": "^1.7.4",
     "wouter": "2.8.0-alpha.2"
   },
