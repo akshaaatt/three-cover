@@ -9,18 +9,9 @@ function App() {
     return (
         <Router>
             <Routes>
-                {
-                    // @ts-ignore
-                    <Route exact path='/' element={<Home/>}/>
-                }
-                {
-                    // @ts-ignore
-                    <Route exact path='/library' element={<ThreeLibraryPage/>}/>
-                }
-                {
-                    // @ts-ignore
-                    <Route exact path='/slider' element={<Slider/>}/>
-                }
+                <Route path='/' element={<Home/>}/>
+                <Route path='/library' element={<ThreeLibraryPage/>}/>
+                <Route path='/slider' element={<Slider/>}/>
             </Routes>
         </Router>
     );
