@@ -9,10 +9,18 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/three-cover' element={<Home />} />
-                <Route path='/three-cover/library' element={<ThreeLibraryPage/>} />
-                <Route path='/three-cover/slider' element={<Slider/>} />
+                {
+                    // @ts-ignore
+                    <Route exact path='/' element={<Home/>}/>
+                }
+                {
+                    // @ts-ignore
+                    <Route exact path='/library' element={<ThreeLibraryPage/>}/>
+                }
+                {
+                    // @ts-ignore
+                    <Route exact path='/slider' element={<Slider/>}/>
+                }
             </Routes>
         </Router>
     );
