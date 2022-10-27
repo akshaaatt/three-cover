@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/akshaaatt/three-cover/issues"
   },
-  "homepage": "https://akshaaatt.github.io/three-cover/#",
+  "homepage": "https://akshaaatt.github.io/three-cover/",
   "dependencies": {
     "@react-three/drei": "9.37.1",
     "@react-three/fiber": "8.8.10",
