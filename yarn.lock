@@ -8894,10 +8894,10 @@ utils-merge@1.0.1:
   resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
 
-uuid-by-string@3.0.6:
-  version "3.0.6"
-  resolved "https://registry.npmjs.org/uuid-by-string/-/uuid-by-string-3.0.6.tgz"
-  integrity sha512-cxct9G0ImP5wPftzth0FPafFNVHqCNVD+FMwWdWPePATDyLEQApRyiKY3NCaxbjLa6+9H6egHHIBX6IR3IGH4Q==
+uuid-by-string@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/uuid-by-string/-/uuid-by-string-4.0.0.tgz#1d6da2154294368ae85d3853e4c895cfa52c1179"
+  integrity sha512-88ZSfcSkN04juiLqSsuyteqlSrXNFdsEPzSv3urnElDXNsZUXQN0smeTnh99x2DE15SCUQNgqKBfro54CuzHNQ==
   dependencies:
     js-md5 "^0.7.3"
     js-sha1 "^0.6.0"
