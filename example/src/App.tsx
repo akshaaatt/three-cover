@@ -10,8 +10,9 @@ function App() {
         <Router>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/library' element={<ThreeLibraryPage/>} />
-                <Route path='/slider' element={<Slider/>} />
+                <Route path='/three-cover' element={<Home />} />
+                <Route path='/three-cover/library' element={<ThreeLibraryPage/>} />
+                <Route path='/three-cover/slider' element={<Slider/>} />
             </Routes>
         </Router>
     );
