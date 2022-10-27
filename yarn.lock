@@ -1640,10 +1640,10 @@
   resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.5.5.tgz"
   integrity sha512-7I/qY8H7Enwasxr4jU6WmtNK+RZ4Z/XvSlDvjXFVe7ii1x0MoSlkw6pD7xuac8qrHQRm9BTcbZNyeeKApYsvCg==
 
-"@react-three/drei@9.32.3":
-  version "9.32.3"
-  resolved "https://registry.npmjs.org/@react-three/drei/-/drei-9.32.3.tgz"
-  integrity sha512-MLLBRukt5E94sXox3Ika2ltIrQi3kAfNhefev+Gk225iBdEX+J4fmhBj3TlSGw9Dg0neZ7d47XwTKXrdx/jxGQ==
+"@react-three/drei@9.37.1":
+  version "9.37.1"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.37.1.tgz#426104fdebdf3f6a8e907964c8d0853e74f06d5b"
+  integrity sha512-9KwZ1ipJicc239BNC9TBe8G8C9unxb9NOBnHYJSQjZTvxiMDAbqELYp8HE7/g2ZwVhY/SytywRMm3V+Mz4tP9Q==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/three" "^9.3.1"
@@ -1659,7 +1659,7 @@
     stats.js "^0.17.0"
     suspend-react "^0.0.8"
     three-mesh-bvh "^0.5.15"
-    three-stdlib "2.17.0"
+    three-stdlib "^2.17.3"
     troika-three-text "^0.46.4"
     utility-types "^3.10.0"
     zustand "^3.5.13"
@@ -8584,10 +8584,10 @@ three-mesh-bvh@^0.5.15:
   resolved "https://registry.npmjs.org/three-mesh-bvh/-/three-mesh-bvh-0.5.17.tgz"
   integrity sha512-0iyqZe0Op6tH7nqVI4L2Ae1tACiYliJvx0cFvehrVzzfZRW8p4c9GYnqGPPN5+x7Q8L5WjJC8kgoA8Z+/+1oAQ==
 
-three-stdlib@2.17.0:
-  version "2.17.0"
-  resolved "https://registry.npmjs.org/three-stdlib/-/three-stdlib-2.17.0.tgz"
-  integrity sha512-m19X4+ajh+2EJIVcjB288LgbqTli5b8kFahJlg9oNCBfaL8geCgEoM4OUirgV0Ez6Lr58N1MPBR6LjJt7ALfKQ==
+three-stdlib@^2.17.3:
+  version "2.17.3"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.17.3.tgz#f92d322810d81379a51344b21e0a2e941b84cb8f"
+  integrity sha512-k2VwPXi75ySy0fxPIeUk3mLkj3/j+sCFK4g9Kp5J7w0PUh6qrCdhah7L6+On6fW5mBdVtML4Q5yEyN1R0Cfvqw==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@types/offscreencanvas" "^2019.6.4"
