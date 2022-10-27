@@ -1,6 +1,6 @@
 import React from 'react';
 import './res/css/styles.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages';
 import ThreeLibraryPage from './pages/library';
 import Slider from './pages/slider';
