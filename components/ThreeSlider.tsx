@@ -1,22 +1,25 @@
-import * as THREE from 'three';
-import React, { useRef, useState } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Image, ScrollControls, Scroll, useScroll } from '@react-three/drei';
-import { useSnapshot } from 'valtio';
-import { Minimap } from './utils/Minimap';
-import { state, damp } from './utils/util';
+import * as THREE from 'three'
+import React, { useRef, useState } from 'react'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Image, ScrollControls, Scroll, useScroll } from '@react-three/drei'
+import { useSnapshot } from 'valtio'
+import { Minimap } from './utils/Minimap'
+import { state, damp } from './utils/util'
 
 // eslint-disable-next-line react/prop-types
 function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
-  const ref = useRef();
-  const scroll = useScroll();
-  const { clicked, urls } = useSnapshot(state);
-  const [hovered, hover] = useState(false);
-  const click = () => (state.clicked = index === clicked ? null : index);
-  const over = () => hover(true);
-  const out = () => hover(false);
+  const ref = useRef()
+  const scroll = useScroll()
+  const { clicked, urls } = useSnapshot(state)
+  const [hovered, hover] = useState(false)
+  const click = () => (state.clicked = index === clicked ? null : index)
+  const over = () => hover(true)
+  const out = () => hover(false)
   useFrame((state, delta) => {
-    const y = scroll.curve(index / urls.length - 1.5 / urls.length, 4 / urls.length);
+    const y = scroll.curve(
+      index / urls.length - 1.5 / urls.length,
+      4 / urls.length
+    )
     // @ts-ignore
     ref.current.material.scale[1] = ref.current.scale.y = damp(
       // @ts-ignore
@@ -24,7 +27,7 @@ function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
       clicked === index ? 5 : 4 + y,
       8,
       delta
-    );
+    )
     // @ts-ignore
     ref.current.material.scale[0] = ref.current.scale.x = damp(
       // @ts-ignore
@@ -32,16 +35,31 @@ function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
       clicked === index ? 4.7 : scale[0],
       6,
       delta
-    );
+    )
     if (clicked !== null && index < clicked)
       // @ts-ignore
-      ref.current.position.x = damp(ref.current.position.x, position[0] - 2, 6, delta);
+      ref.current.position.x = damp(
+        ref.current.position.x,
+        position[0] - 2,
+        6,
+        delta
+      )
     if (clicked !== null && index > clicked)
       // @ts-ignore
-      ref.current.position.x = damp(ref.current.position.x, position[0] + 2, 6, delta);
+      ref.current.position.x = damp(
+        ref.current.position.x,
+        position[0] + 2,
+        6,
+        delta
+      )
     if (clicked === null || clicked === index)
       // @ts-ignore
-      ref.current.position.x = damp(ref.current.position.x, position[0], 6, delta);
+      ref.current.position.x = damp(
+        ref.current.position.x,
+        position[0],
+        6,
+        delta
+      )
     // @ts-ignore
     ref.current.material.grayscale = damp(
       // @ts-ignore
@@ -49,13 +67,13 @@ function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
       hovered || clicked === index ? 0 : Math.max(0, 1 - y),
       6,
       delta
-    );
+    )
     // @ts-ignore
     ref.current.material.color.lerp(
       c.set(hovered || clicked === index ? 'white' : '#aaa'),
       hovered ? 0.3 : 0.1
-    );
-  });
+    )
+  })
   return (
     // @ts-ignore
     <Image
@@ -67,16 +85,20 @@ function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
       onPointerOver={over}
       onPointerOut={out}
     />
-  );
+  )
 }
 
 // eslint-disable-next-line react/prop-types
 function Items({ w = 0.7, gap = 0.15 }) {
-  const { urls } = useSnapshot(state);
-  const { width } = useThree((state) => state.viewport);
-  const xW = w + gap;
+  const { urls } = useSnapshot(state)
+  const { width } = useThree((state) => state.viewport)
+  const xW = w + gap
   return (
-    <ScrollControls horizontal damping={10} pages={(width - xW + urls.length * xW) / width}>
+    <ScrollControls
+      horizontal
+      damping={10}
+      pages={(width - xW + urls.length * xW) / width}
+    >
       <Minimap />
       <Scroll>
         {
@@ -84,13 +106,17 @@ function Items({ w = 0.7, gap = 0.15 }) {
         }
       </Scroll>
     </ScrollControls>
-  );
+  )
 }
 
 const ThreeSlider = () => (
-  <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} onPointerMissed={() => (state.clicked = null)}>
+  <Canvas
+    gl={{ antialias: false }}
+    dpr={[1, 1.5]}
+    onPointerMissed={() => (state.clicked = null)}
+  >
     <Items />
   </Canvas>
-);
+)
 
-export default ThreeSlider;
+export default ThreeSlider

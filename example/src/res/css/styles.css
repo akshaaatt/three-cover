@@ -1,21 +1,21 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body,
 #root {
-    width: 100vw;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
-    color: white;
-    background: black;
-    user-select: none;
+  color: white;
+  background: black;
+  user-select: none;
 }
 
 @tailwind base;

@@ -1,10 +1,8 @@
-import React from 'react';
-import {ThreeSlider} from "three-cover";
+import React from 'react'
+import { ThreeSlider } from 'three-cover'
 
 const Slider = () => {
-    return (
-        <ThreeSlider />
-    );
-};
+  return <ThreeSlider />
+}
 
-export default Slider;
+export default Slider

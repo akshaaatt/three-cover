@@ -1,21 +1,21 @@
-import * as THREE from 'three';
-import React, { useRef } from 'react';
-import { useFrame, useThree } from '@react-three/fiber';
-import { useScroll } from '@react-three/drei';
-import { useSnapshot } from 'valtio';
-import { state, damp } from './util';
+import * as THREE from 'three'
+import React, { useRef } from 'react'
+import { useFrame, useThree } from '@react-three/fiber'
+import { useScroll } from '@react-three/drei'
+import { useSnapshot } from 'valtio'
+import { state, damp } from './util'
 
-const material = new THREE.LineBasicMaterial({ color: 'white' });
+const material = new THREE.LineBasicMaterial({ color: 'white' })
 const geometry = new THREE.BufferGeometry().setFromPoints([
   new THREE.Vector3(0, -0.5, 0),
   new THREE.Vector3(0, 0.5, 0)
-]);
+])
 
 export function Minimap() {
-  const ref = useRef();
-  const scroll = useScroll();
-  const { urls } = useSnapshot(state);
-  const { height } = useThree((state) => state.viewport);
+  const ref = useRef()
+  const scroll = useScroll()
+  const { urls } = useSnapshot(state)
+  const { height } = useThree((state) => state.viewport)
   useFrame((state, delta) => {
     // @ts-ignore
     ref.current.children.forEach((child, index) => {
@@ -23,10 +23,13 @@ export function Minimap() {
       //   starting at the position of my item
       //   ranging across 4 / total length
       //   make it a sine, so the value goes from 0 to 1 to 0.
-      const y = scroll.curve(index / urls.length - 1.5 / urls.length, 4 / urls.length);
-      child.scale.y = damp(child.scale.y, 0.1 + y / 6, 8, delta);
-    });
-  });
+      const y = scroll.curve(
+        index / urls.length - 1.5 / urls.length,
+        4 / urls.length
+      )
+      child.scale.y = damp(child.scale.y, 0.1 + y / 6, 8, delta)
+    })
+  })
   return (
     <group ref={ref}>
       {urls.map((_, i) => (
@@ -39,5 +42,5 @@ export function Minimap() {
         />
       ))}
     </group>
-  );
+  )
 }

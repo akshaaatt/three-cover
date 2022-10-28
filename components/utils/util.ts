@@ -1,7 +1,7 @@
-import * as THREE from 'three';
-import { proxy } from 'valtio';
+import * as THREE from 'three'
+import { proxy } from 'valtio'
 
-export const damp = THREE.MathUtils.damp;
+export const damp = THREE.MathUtils.damp
 export const state = proxy({
   clicked: null,
   urls: [
@@ -15,4 +15,4 @@ export const state = proxy({
     'https://is4-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/600x600bb.png',
     'https://is4-ssl.mzstatic.com/image/thumb/Music122/v4/55/dd/ab/55ddab67-26ec-e244-2c37-37f92b63bf19/196589366870.jpg/600x600bb.png'
   ]
-});
+})

@@ -23,9 +23,7 @@ yarn add three-cover
 
 ## Usage
 
-
 ## API / Props
-
 
 ## License
 
