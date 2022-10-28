@@ -148,7 +148,6 @@ const Frame = ({ url, c = new THREE.Color(), ...props }) => {
           <meshBasicMaterial toneMapped={false} fog={false} />
         </mesh>
         {
-          // @ts-expect-error
           <Image
             raycast={() => null}
             ref={image}
