@@ -13,9 +13,9 @@
     "predeploy": "cd example && yarn install && yarn build",
     "deploy": "gh-pages -d example/build",
     "prepare": "husky install",
-    "lint": "yarn format:fix",
-    "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore ."
+    "lint": "yarn lint:fix && yarn format",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -55,9 +55,17 @@
     "wouter": "2.8.0-alpha.2"
   },
   "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.10",
     "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
-    "prettier": "2.7.1",
-    "typescript": "^4.8.4"
+    "prettier": "^2.7.1",
+    "typescript": "*"
   }
 }

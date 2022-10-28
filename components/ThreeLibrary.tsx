@@ -12,6 +12,7 @@ import getUuid from 'uuid-by-string'
 
 const GOLDENRATIO = 1.61803398875
 
+// eslint-disable-next-line react/prop-types
 const ThreeLibrary = ({ images }) => {
   return (
     <Canvas
@@ -27,7 +28,7 @@ const ThreeLibrary = ({ images }) => {
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
           <planeGeometry args={[50, 50]} />
           {
-            // @ts-ignore
+            // @ts-expect-error
             <MeshReflectorMaterial
               blur={[300, 100]}
               resolution={2048}
@@ -57,14 +58,14 @@ const Frames = ({
   const [, params] = useRoute('/item/:id')
   const [, setLocation] = useLocation()
   useEffect(() => {
-    // @ts-ignore
+    // @ts-expect-error
     clicked.current = ref.current.getObjectByName(params?.id)
     if (clicked.current) {
-      // @ts-ignore
+      // @ts-expect-error
       clicked.current.parent.updateWorldMatrix(true, true)
-      // @ts-ignore
+      // @ts-expect-error
       clicked.current.parent.localToWorld(p.set(0, GOLDENRATIO / 2, 1.25))
-      // @ts-ignore
+      // @ts-expect-error
       clicked.current.parent.getWorldQuaternion(q)
     } else {
       p.set(0, 0, 5.5)
@@ -101,24 +102,24 @@ const Frame = ({ url, c = new THREE.Color(), ...props }) => {
   const name = getUuid(url)
   useCursor(hovered)
   useFrame((state) => {
-    // @ts-ignore
+    // @ts-expect-error
     image.current.material.zoom =
       2 + Math.sin(rnd * 10000 + state.clock.elapsedTime / 3) / 2
-    // @ts-ignore
+    // @ts-expect-error
     image.current.scale.x = THREE.MathUtils.lerp(
-      // @ts-ignore
+      // @ts-expect-error
       image.current.scale.x,
       0.85 * (hovered ? 0.85 : 1),
       0.1
     )
-    // @ts-ignore
+    // @ts-expect-error
     image.current.scale.y = THREE.MathUtils.lerp(
-      // @ts-ignore
+      // @ts-expect-error
       image.current.scale.y,
       0.9 * (hovered ? 0.905 : 1),
       0.1
     )
-    // @ts-ignore
+    // @ts-expect-error
     frame.current.material.color.lerp(c.set(hovered ? 'orange' : 'white'), 0.1)
   })
   return (
@@ -147,7 +148,7 @@ const Frame = ({ url, c = new THREE.Color(), ...props }) => {
           <meshBasicMaterial toneMapped={false} fog={false} />
         </mesh>
         {
-          // @ts-ignore
+          // @ts-expect-error
           <Image
             raycast={() => null}
             ref={image}
