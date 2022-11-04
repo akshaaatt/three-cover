@@ -119,7 +119,7 @@ const Items = ({ urls, w = 0.7, gap = 0.15 }): JSX.Element => {
       // eslint-disable-next-line react/prop-types
       pages={(width - xW + urls.length * xW) / width}
     >
-      <Minimap />
+      <Minimap urls={urls}/>
       <Scroll>
         {/* eslint-disable-next-line react/prop-types */}
         {urls.map((url, i) => (
@@ -144,7 +144,7 @@ const ThreeSlider = (props): JSX.Element => (
     onPointerMissed={() => (state.clicked = null)}
   >
     {/* eslint-disable-next-line react/prop-types */}
-    <Items urls={props.urls}/>
+    <Items urls={props.urls} />
   </Canvas>
 )
 
