@@ -1871,10 +1871,10 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.5.5.tgz#c8e94f1b9232ca7cb9d860ea67762ec401b1de14"
   integrity sha512-7I/qY8H7Enwasxr4jU6WmtNK+RZ4Z/XvSlDvjXFVe7ii1x0MoSlkw6pD7xuac8qrHQRm9BTcbZNyeeKApYsvCg==
 
-"@react-three/drei@9.37.1":
-  version "9.37.1"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.37.1.tgz#426104fdebdf3f6a8e907964c8d0853e74f06d5b"
-  integrity sha512-9KwZ1ipJicc239BNC9TBe8G8C9unxb9NOBnHYJSQjZTvxiMDAbqELYp8HE7/g2ZwVhY/SytywRMm3V+Mz4tP9Q==
+"@react-three/drei@9.40.0":
+  version "9.40.0"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.40.0.tgz#4b0987fe8e7a7360b4d5ea6d1d0bcf932df98248"
+  integrity sha512-v+7l62c7BIXS172E1TiEOeXXpZnfoJNsdjZK5h0TxKVXsbhs5t6rMAlDKhgWbZ96rDzgNrSIPv+GMzlG/rkFdQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/three" "^9.3.1"
@@ -1895,10 +1895,10 @@
     utility-types "^3.10.0"
     zustand "^3.5.13"
 
-"@react-three/fiber@8.8.10":
-  version "8.8.10"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.8.10.tgz#1a862a93f9b4db674f9c8b89f87e2c55b554d319"
-  integrity sha512-4Uxo4wxWkIPGFsRVkdILi/ANV/161KBSmqeMhaTpPjbjL+gNpC7z1vTUs7BI45iKcS+EhwUPUcFUxLnxelQbGw==
+"@react-three/fiber@8.9.0":
+  version "8.9.0"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.9.0.tgz#4c5c73f4fcc9b93743c00cb369a1d4f6f12747e8"
+  integrity sha512-zoWCVxJlzDxrhz007jKC9+xwb/QAZeh+RJ+uzbsSddqZQDDhJBjFwF1vSwQUjEqdIw7LKA0iCOvj+6VlC5PkMw==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
@@ -6486,9 +6486,9 @@ loader-runner@^4.2.0:
   integrity sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==
 
 loader-utils@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.2.tgz#d6e3b4fb81870721ae4e0868ab11dd638368c129"
-  integrity sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.3.tgz#d4b15b8504c63d1fc3f2ade52d41bc8459d6ede1"
+  integrity sha512-THWqIsn8QRnvLl0shHYVBN9syumU8pYWEHPTmkiVGd+7K5eFNVSY6AJhRvgGF70gg1Dz+l/k8WicvFCxdEs60A==
   dependencies:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
@@ -9074,13 +9074,13 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-three-cover@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.4.1.tgz#2a462d11e89fd61d91babe1232893a25a7dc7969"
-  integrity sha512-Wo9leJYweSmUM6Oh3Ab4yZgZZo+3OTVi9dB1YpwAh2DxxI1VyBcJ4UkK2RsBxqcnfM1++0gGjqfztw1nkdjtxA==
+three-cover@1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/three-cover/-/three-cover-1.4.3.tgz#c91e4c2399cafed581febc9d3d1c6c23e9f9b7c2"
+  integrity sha512-52lIALIhmCNgyWkNdyqxduyDKaCyOkP/ilaoVWzeVhohUYQGMS6UljuNbEfHxNfxeiAhY5Smh897onBs567xPQ==
   dependencies:
-    "@react-three/drei" "9.37.1"
-    "@react-three/fiber" "8.8.10"
+    "@react-three/drei" "9.40.0"
+    "@react-three/fiber" "8.9.0"
     "@types/jest" "^29.2.0"
     "@types/node" "^18.11.5"
     "@types/react" "^18.0.22"
@@ -9089,7 +9089,7 @@ three-cover@1.4.1:
     react "^18.2.0"
     react-dom "^18.2.0"
     react-scripts "5.0.1"
-    three "^0.145.0"
+    three "^0.146.0"
     uuid-by-string "4.0.0"
     valtio "^1.7.4"
     wouter "2.8.0-alpha.2"
@@ -9116,10 +9116,10 @@ three-stdlib@^2.17.3:
     potpack "^1.0.1"
     zstddec "^0.0.2"
 
-three@^0.145.0:
-  version "0.145.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.145.0.tgz#a613d71e75effc2aed88be630027ca01e2b6502e"
-  integrity sha512-EKoHQEtEJ4CB6b2BGMBgLZrfwLjXcSUfoI/MiIXUuRpeYsfK5aPWbYhdtIVWOH+x6X0TouldHKHBuc/LAiFzAw==
+three@^0.146.0:
+  version "0.146.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.146.0.tgz#fd80f0d128ab4bb821a02191ae241e4e6326f17a"
+  integrity sha512-1lvNfLezN6OJ9NaFAhfX4sm5e9YCzHtaRgZ1+B4C+Hv6TibRMsuBAM5/wVKzxjpYIlMymvgsHEFrrigEfXnb2A==
 
 throat@^6.0.1:
   version "6.0.1"
