@@ -39,7 +39,7 @@
   },
   "homepage": "https://akshaaatt.github.io/three-cover/",
   "dependencies": {
-    "@react-three/drei": "9.41.3",
+    "@react-three/drei": "9.46.2",
     "@react-three/fiber": "8.9.1",
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.5",
